@@ -3,7 +3,7 @@ import json
 
 
 class _Folder():
-    def __init__(self, session, folder_name, url, timeout=None):
+    def __init__(self, session, folder_name, url, timeout=30):
         self._session = session
         self.folder_name = folder_name
         self._escaped_folder_name = self._escape_name(self.folder_name)
